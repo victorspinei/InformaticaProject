@@ -100,11 +100,34 @@ h1 {
     font-weight: 700;
     color: #D83933;
     margin-left: 2rem;
+    margin-bottom: 1rem;
+    position: relative;
+
+    text-align: center;
 }
-hr {
-    background-color: #D83933;
-    height: 10px;
+h1::after {
+    content: "";
     width: 100%;
-    margin: 0;
-    padding: 0;
+    height: 10px;
+    background-color: #D83933;
+    position: absolute;
+    left: -2rem;
+    bottom: -1rem;
+}
+
+.cards {
+    background-color: aquamarine;
+    display: grid;
+    display: grid;
+    gap: 0.5rem;
+    width: 100%;
+    max-width: 1200px;
+    min-width: 300px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.card {
+    padding: 0.25rem;
+    margin: 0.5rem;
+    border: 2px solid #42A5F6;
+    background: #FFF;
 }
