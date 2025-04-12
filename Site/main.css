@@ -31,33 +31,29 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-left: 2rem;
     margin-right: 2rem;
     margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0rem;
+    height: 50px;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid #42A5F6;
 }
 
 body {
-
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 .main-nav {
     visibility: none;
@@ -84,15 +80,20 @@ header button {
     background: none;
     font-size: 1.5rem;
 }
-header p {
+header button:hover {
+    cursor: pointer;
+}
+header .main-page-link {
     font-size: 1.5rem;
     font-weight: 700;
     font-family: monospace;
 
 }
-header {
-    padding-bottom: 0.5rem;
-    border-bottom: 3px solid hsl(207, 91%, 30%);
+header .main-page-link:hover {
+    cursor: pointer;
+}
+main {
+    flex: 1;
 }
 h1 {
     font-size: 2rem;
@@ -107,7 +108,7 @@ h1 {
 }
 h1::after {
     content: "";
-    width: 100%;
+    width: 100vw;
     height: 10px;
     background-color: #D83933;
     position: absolute;
@@ -116,18 +117,50 @@ h1::after {
 }
 
 .cards {
-    background-color: aquamarine;
-    display: grid;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: hsl(207, 91%, 91%);
     display: grid;
     gap: 0.5rem;
     width: 100%;
-    max-width: 1200px;
     min-width: 300px;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: stretch;
 }
 .card {
     padding: 0.25rem;
     margin: 0.5rem;
     border: 2px solid #42A5F6;
     background: #FFF;
+    height: 80%;
+}
+.card:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px #42A5F6;
+}
+.card .card-header {
+    padding: 0.5rem 0 1rem 0;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: dashed #42A5F6 2px;
+}
+.card .card-header i {
+    transform: scale(1.5);
+
+}
+.card .card-main h3 {
+    text-align: center;
+    margin-bottom: 0.5rem;
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+.card .card-main p {
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+footer {
+    min-height: 150px;
+    background-color: #42A5F6;
 }
