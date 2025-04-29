@@ -5,35 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Servicii Internet</title>
     <link rel="stylesheet" href="../main.css">
+    <link rel="shortcut icon" href="../images/internet.png" type="image/x-icon">
 </head>
 <body>
     <header class="main-header">
         <!-- Link to main page -->
-        <a class="main-page-link" href="../main.html">Servicii Internet</a>
+        <div>
+            <a class="main-page-link" href="../main.html">Servicii Internet</a>
+        
+            <button id="nav-toggle"><i class="fa-solid fa-bars-staggered"></i></button>
+        </div>
+
         <nav class="main-nav">
             <!-- Links for all pages -->
+             <ul>
+                <li><a href="../pages/telnet.html"> Telnet </a></li>
+                <li><a href="../pages/transfer.html"> FTP </a></li>
+                <li><a href="../pages/email.html">Email</a></li>
+                <li><a href="../pages/www.html"> WWW </a></li>
+             </ul>
         </nav>
-        <button><i class="fa-solid fa-bars-staggered"></i></button>
     </header>
     <main>
         <h1 class="topic-title">Serviciul WWW</h1>
 
         <div class="topic-content">
-            <h2>Cuprins</h2>
-            <ul>
-                <li><a href="#pagina_web">Pagina Web</a></li>
-                <li>Site</li>
-                <li>Programe de explorare</li>
-                <li>Serverul de cautare</li>
-            </ul>
+            <div class="summary">
+                <h2>Cuprins</h2>
+                <ul>
+                    <li><a href="#pagina_web">Pagina Web</a></li>
+                    <li><a href="#site">Site</a></li>
+                    <li><a href="#programe_de_explorare">Programe de explorare</a></li>
+                    <li><a href="#browser">Serverul de căutare</a></li>
+                </ul>
+            </div>
+            <img src="https://s2.qwant.com/thumbr/474x474/7/9/2eaa9dba2007fcc5c07e45ff0e26bb1de1a31269f828bf8bd6640971f3ca29/OIP.LQYs5xgL0WOKKImAWcOdnQHaHa.jpg?u=https%3A%2F%2Ftse.mm.bing.net%2Fth%2Fid%2FOIP.LQYs5xgL0WOKKImAWcOdnQHaHa%3Fpid%3DApi&q=0&b=1&p=0&a=0" alt="www image">
         </div>
-        <p class="short-description">
 
-        </p>
-
-        <img src="https://s2.qwant.com/thumbr/474x474/7/9/2eaa9dba2007fcc5c07e45ff0e26bb1de1a31269f828bf8bd6640971f3ca29/OIP.LQYs5xgL0WOKKImAWcOdnQHaHa.jpg?u=https%3A%2F%2Ftse.mm.bing.net%2Fth%2Fid%2FOIP.LQYs5xgL0WOKKImAWcOdnQHaHa%3Fpid%3DApi&q=0&b=1&p=0&a=0" alt="www image">
         <div class="sub-topic" id="pagina_web">
-            <h3 class="sub-topic-title">Pagina Web</h3>
+            <h3 class="sub-topic-title">&#35; Pagina Web</h3>
             <!-- info -->
             <p>
                 Pagina Web este un fişier scris în limbajul <span>HTML</span> şi poate conţine, în afară de informaţii
@@ -41,35 +51,145 @@
             calculator sau pe calculatoare situate în diverse puncte geografice.
             </p>
             
+            <img src="../images/pagini_web.png" alt="pagini web">
+
         </div>
 
         <div class="sub-topic" id="site">
-            <h3 class="sub-topic-title">Site</h3>
+            <h3 class="sub-topic-title">&#35; Site</h3>
             <!-- info -->
             <p>
                 Tehnologia de cooperare în cadrul serviciului WWW este de tipul client-server.
             Utilizatorul care doreşte să ofere publicului larg anumite informaţii instalează pe
             calculatorul său un program server şi elaborează una sau mai multe pagini Web.
             Serverul interceptează cererile sosite de la alte calculatoare şi asigură accesul
-            la paginile respective. Calculatorul pe care sunt instalate paginile Web şi serverul WWW se numeşte <span>site</span>.
+            la paginile respective. Calculatorul pe care sunt instalate paginile Web şi serverul WWW se numeşte <span>site</span> (site &dash; sediu, reşedinţă).
             </p>
 
             <p>
                 Programul client asigură transferul şi afişarea pe ecran a paginilor Web citite
                 de pe diverse calculatoare din Internet. Imediat după pornire, el afişează propria
-                <span>pagină de referinţă</span> şi aşteaptă indicaţiile utilizatorului. Când utilizatorul activează o referinţă, programul client stabileşte o
+                <span>pagină de referinţă</span>  (home page &dash; pagina de acasă) şi aşteaptă indicaţiile utilizatorului. Când utilizatorul activează o referinţă, programul client stabileşte o
                 conexiune cu serverul Web şi copiază de la el pagina specificată în referinţă. Pagina
                 copiată este afişată pe ecran.
             </p>
         </div>
         
+        <div class="sub-topic" id="programe_de_explorare">
+            <h3 class="sub-topic-title">&#35; Programe de explorare</h3>
+            <!-- info -->
+            <p>
+                În continuare, utilizatorul activează o altă referinţă, programul client stabileşte
+din nou conexiunea cu un calculator din reţea, din nou se va citi o pagină Web etc.
+Cu alte cuvinte, utilizatorul „răsfoieşte” paginile Web de pe diverse calculatoare,
+indiferent de poziţia lor geografică. Din acest motiv programele client sunt numite
+<span>programe de răsfoire</span> sau <span>programe de explorare</span> (în engleză browser sau
+explorer).
+            </p>
+
+            <p>
+                În cadrul serviciului WWW resursele reţelei se specifică cu ajutorul unor adrese
+speciale, denumite adrese <span>URL</span> (Uniform Resource Locator &dash; Locator Uniform de
+Resurse). Aceste adrese au forma:
+            </p>
+            <p class="url_example">
+                <span id="protocol"> &lt;protocol&gt; </span>
+                <span class="ignore"> :// </span>
+                <span id="adresa">&lt;Adresă simbolică&gt;</span>
+                <span id="port">[:&lt;port&gt;]/</span>
+                <span id="cale">&lt;cale&gt;/&lt;fişier&gt;</span>
+            </p>
+
+            <p id="url_definition">
+                &dash; Apasă pe o parte componentă a URL&dash;lui
+            </p>
+            <p>
+                Pentru exemplificare, prezentăm câteva adrese URL ce conţin informaţii interesante:
+                <ul>
+                    <li>
+                        <a href="http://www.mecc.gov.md">http://www.mecc.gov.md</a> &dash; site-ul Ministerului Educaţiei, Culturii şi Cercetării,
+                        Republica Moldova;
+                    </li>
+                    <li>
+                        <a href="http://www.ctice.gov.md">http://www.ctice.gov.md</a> &dash; site-ul Centrului de Tehnologii Informaţionale şi Comunicaţionale în Educaţie, Republica Moldova;
+                    </li>
+                    <li>
+                        <a href="https://www.sciencemuseum.org.uk">https://www.sciencemuseum.org.uk</a> &dash; site-ul Muzeului Ştiinţei din Londra, Regatul
+Unit al Marii Britanii şi Irlandei de Nord;
+                    </li>
+                    <li>
+                        <a href="http://www.nasa.gov">http://www.nasa.gov</a> &dash; site-ul agenţiei NASA, Statele Unite ale Americii.
+                    </li>
+                </ul>
+            </p>
+            <p>
+                Amintim că notaţia <span>http</span> specifică protocolul de transfer al hypertextelor
+(Hypertext Transfer Protocol).
+            </p>
+        </div>
+
+        <div class="sub-topic" id="browser">
+            <h3 class="sub-topic-title">&#35; Serverul de căutare</h3>
+            <!-- info -->
+            <p>
+                În prezent, numărul fişierelor din reţeaua Internet este de ordinul miliarde-
+                lor. Evident, nici nu poate fi vorba de căutarea informaţiei necesare prin citirea
+                individuală a fiecărui fişier. Pentru a simplifica căutarea informaţiei, în cadrul
+                reţelei Internet au fost create <span>servere de căutare</span> (search engine).
+            </p>
+            <p>
+                <span>Serverul de căutare</span> este un calculator puternic care explorează încontinuu
+reţeaua şi citeşte paginile Web sau alte informaţii prezentate publicului larg. Acestea sunt clasificate în funcţie de datele pe care le conţin, iar adresele lor sunt
+reţinute în baza de date de pe server.
+
+            </p>
+            <p>
+                Programul client adresează serverului de căutare o cerere în care indică de
+ce fel de informaţii are nevoie. Serverul interoghează baza de date şi transmite
+clientului o listă de adrese la care pot fi găsite informaţiile cerute.
+            </p>
+            <p>
+                Pentru exemplificare, amintim serverele de căutare frecvent utilizate:
+                <ul>
+                    <li>
+                        <a href="http://www.yahoo.com">http://www.yahoo.com</a> &dash; serverul YAHOO (Yet Another Hierarchically Organized
+Oracle &dash; încă un oracol organizat ierarhic) al companiei Yahoo! Inc.;
+                    </li>
+                    <li>
+                        <a href="http://www.google.com">http://www.google.com</a> &dash; serverul GOOGLE al corporaţiei Google Inc.;
+                    </li>
+                    <li>
+                        <a href="http://www.bing.com">http://www.bing.com</a> &dash; serverul BING al corporaţiei Microsoft Inc.;
+                    </li>
+                    <li>
+                        <a href="http://www.yandex.ru">http://www.yandex.ru</a> &dash; serverul YANDEX al companiei «Яндекс»;
+                    </li>
+                    <li>
+                        <a href="http://www.infoseek.com">http://www.infoseek.com</a> &dash; serverul Infoseek al firmei Infoseek Corp.
+                    </li>
+                </ul>
+            </p>
+            <p>
+                Accesul la aceste servere este gratuit.
+            </p>
+        </div>
 
     </main>
     <!-- Info about the page (creators, links) -->
     <footer>
-
+        <div>
+            <p class="footer-p">Realizat de:</p>
+            <ul>
+                <li><span>Coadă Vlad</span> &dash; Informații, HTML</li>
+                <li><span>Său Artemii</span> &dash; Informații, HTML</li>
+                <li><span>Spinei Victor</span> &dash; CSS, JavaScript</li>
+            </ul>
+        </div>
+        <p class="copyright">&copy; 2025</p>
     </footer>
 
 </body>
+<script src="../scripts/burger_button.js"></script>
+<script src="../scripts/url_example.js"></script>
 <script src="https://kit.fontawesome.com/0a4bfb7071.js" crossorigin="anonymous"></script>
 </html>

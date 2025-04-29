@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicii Internet</title>
+    <link rel="stylesheet" href="../main.css">
+    <link rel="shortcut icon" href="../images/internet.png" type="image/x-icon">
+</head>
+<body>
+    <header class="main-header">
+        <!-- Link to main page -->
+        <div>
+            <a class="main-page-link" href="../main.html">Servicii Internet</a>
+        
+            <button id="nav-toggle"><i class="fa-solid fa-bars-staggered"></i></button>
+        </div>
+
+        <nav class="main-nav">
+            <!-- Links for all pages -->
+             <ul>
+                <li><a href="../pages/telnet.html"> Telnet </a></li>
+                <li><a href="../pages/transfer.html"> FTP </a></li>
+                <li><a href="../pages/email.html">Email</a></li>
+                <li><a href="../pages/www.html"> WWW </a></li>
+             </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 class="topic-title">Serviciul transfer de fişiere</h1>
+
+        <div class="topic-content">
+            <div class="summary">
+                <h2>Cuprins</h2>
+                <ul>
+                    <li><a href="#ftp">serviciul FTP</a></li>
+                    <li><a href="#anonymous_ftp">FTP anonymous</a></li>
+                </ul>
+            </div>
+            <img src="https://img.freepik.com/premium-vector/ftp-file-transfer-icon-ftp-technology-icon-transfer-data-server-vector-illustration_100456-3699.jpg" alt="ftp">
+        </div>
+
+        <div class="sub-topic" id="ftp">
+            <h3 class="sub-topic-title">&#35; Serviciul FTP</h3>
+            <!-- info -->
+            <p>
+                Serviciul transfer de fişiere sau, mai scurt, serviciul FTP (File Transfer
+Protocol) permite utilizatorului să copie fişiere de pe calculatoare situate în diverse
+puncte geografice. Acest serviciu oferă două moduri de transfer al fişierelor:
+            <ul>
+                <li>
+                    <span>modul binar</span>, în care se păstrează secvenţa de biţi a fişierului, astfel încât
+                    originalul şi copia sunt identice bit cu bit;
+                </li>
+                <li>
+                    <span>modul text</span>, în care se transferă seturi de caractere în codul <span>ASCII</span>.
+                </li>
+            </ul>
+            </p>
+            
+        </div>
+        <div class="sub-topic" id="anonymous_ftp">
+            <h3 class="sub-topic-title">&#35; FTP anonymous</h3>
+            <!-- info -->
+            <p>
+                În general, pentru a avea acces la serverul FTP, clientul trebuie să introducă
+o parolă. Totuşi există <span>servere publice</span> (FTP anonymous) care permit accesul la
+fişiere fără a fi nevoie de o parolă specială
+            </p>
+        </div>
+
+    </main>
+    <!-- Info about the page (creators, links) -->
+    <footer>
+        <div>
+            <p class="footer-p">Realizat de:</p>
+            <ul>
+                <li><span>Coadă Vlad</span> &dash; Informații, HTML</li>
+                <li><span>Său Artemii</span> &dash; Informații, HTML</li>
+                <li><span>Spinei Victor</span> &dash; CSS, JavaScript</li>
+            </ul>
+        </div>
+        <p class="copyright">&copy; 2025</p>
+    </footer>
+
+</body>
+<script src="../scripts/burger_button.js"></script>
+<script src="https://kit.fontawesome.com/0a4bfb7071.js" crossorigin="anonymous"></script>
+</html>

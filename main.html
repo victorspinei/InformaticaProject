@@ -5,16 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Servicii Internet</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" href="./images/internet.png" type="image/x-icon">
 </head>
 <body>
     <header class="main-header">
         <!-- Link to main page -->
-        <a class="main-page-link" href="./main.html">Servicii Internet</a>
+        <div>
+            <a class="main-page-link" href="./main.html">Servicii Internet</a>
+        
+            <button id="nav-toggle"><i class="fa-solid fa-bars-staggered"></i></button>
+        </div>
+
         <nav class="main-nav">
             <!-- Links for all pages -->
+             <ul>
+                <li><a href="./pages/telnet.html"> Telnet </a></li>
+                <li><a href="./pages/transfer.html"> FTP </a></li>
+                <li><a href="./pages/email.html">Email</a></li>
+                <li><a href="./pages/www.html"> WWW </a></li>
+             </ul>
         </nav>
-        <button><i class="fa-solid fa-bars-staggered"></i></button>
     </header>
+
     <main>
         <!-- Hero -->
         <div class="hero-div">
@@ -26,7 +38,7 @@
         </div>
         <div class="cards">
             <!-- Links for every page -->
-            <a class="card" href="./pages/">
+            <a class="card" href="./pages/telnet.html">
                 <div class="card-header">
                     <!-- Icons from Font Awesome -->
                     <i class="fa-solid fa-terminal"></i>
@@ -39,7 +51,7 @@
                 </div>
             </a>
             <!-- Rest of the links -->
-            <a class="card" href="./pages/">
+            <a class="card" href="./pages/transfer.html">
                 <div class="card-header">
                     <i class="fa-solid fa-file-export"></i>
                 </div>
@@ -76,9 +88,18 @@
     </main>
     <!-- Info about the page (creators, links) -->
     <footer>
-
+        <div>
+            <p class="footer-p">Realizat de:</p>
+            <ul>
+                <li><span>Coadă Vlad</span> &dash; Informații, HTML</li>
+                <li><span>Său Artemii</span> &dash; Informații, HTML</li>
+                <li><span>Spinei Victor</span> &dash; CSS, JavaScript</li>
+            </ul>
+        </div>
+        <p class="copyright">&copy; 2025</p>
     </footer>
 
 </body>
+<script src="./scripts/burger_button.js"></script>
 <script src="https://kit.fontawesome.com/0a4bfb7071.js" crossorigin="anonymous"></script>
 </html>
