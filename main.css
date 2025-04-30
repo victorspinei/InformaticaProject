@@ -390,3 +390,7 @@ footer ul span {
         max-width: 300px;
     }
 }
+
+img {
+max-width: 80%;
+}
